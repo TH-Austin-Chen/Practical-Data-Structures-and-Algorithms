@@ -76,12 +76,12 @@ IDs and scores of students who qualify.
 
 ### 6. **RoadStatus**
 
-The `RoadStatus` class manages traffic lights at a T-junction to regulate traffic flow.
+The `RoadStatus` class manages traffic lights at a T-junction to regulate traffic flow by dynamically determining which road gets the green light based on the number of waiting cars. The system is **event-triggered**, responding to car arrivals rather than being time-driven.
 
 #### Key Features:
-- Dynamically adjusts green lights based on the number of waiting cars.
-- Follows priority rules, favoring roads with more cars.
-- Handles real-time events with a system clock.
+- Event-Driven Control: Signal changes occur only when a new car arrives, optimizing responsiveness and minimizing unnecessary light changes.
+- Dynamic Signal Rules: Prioritizes roads with the highest number of waiting cars, resolving ties by road index.
+- Fair Traffic Management: Adapts in real-time to ensure efficient handling of traffic across all roads.
 
 #### Final Output:
 Efficient and fair traffic flow management.
